@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #sütlü,
+        #tatlı {
+            border: 3px solid red;
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to Clarusway</h1>
+
+    <form action="result.html" method="get">
+
+        <div>
+            <label for="isim">İsim:</label>
+            <input type="text" name="isim" id="isim">
+        </div>
+        <div>
+            <label for="soyisim">Soyisim:</label>
+            <input type="text" name="soyisim" id="soyisim">
+        </div>
+        <div>
+            <label for="parola">Parola:</label>
+            <input type="password" name="parola" id="parola">
+
+        </div>
+        <div>
+            <label>Cinsiyet</label> <br>
+            <label for="Erkek">Erkek</label>
+            <input type="radio" name="cinsiyet" id="Erkek" value="Erkek">
+            <label for="Kadın">Kadın</label>
+            <input type="radio" name="cinsiyet" id="Kadın" value="Kadın" checked>
+        </div>
+
+        <div>
+            <label>Favori Hayvan Dostlarınızı Seçin :</label> <br>
+            <label for="hayvan1">Panda</label>
+            <input type="checkbox" name="hayvan1" id="hayvan1" value="Panda">
+            <label for="hayvan2">Balık</label>
+            <input type="checkbox" name="hayvan2" id="hayvan2" value="Balık">
+            <label for="hayvan3">Kedi</label>
+            <input type="checkbox" name="hayvan3" id="hayvan3" value="Kedi">
+
+        </div>
+        <div>
+            <label for="yaş">Yaş</label>
+            <input type="number" name="Yaş" id="yaş" placeholder="Yaşınızı giriniz...">
+        </div>
+        <div>
+            <label for="search">Search:</label>
+            <input type="search" name="arananlar" id="search" placeholder="arama...">
+        </div>
+        <div>
+            <label for="renk">Renk Seçin:</label>
+            <input type="color" name="renk" id="renk">
+        </div>
+        <div>
+            <label for="tarih">Tarih:</label>
+            <input type="date" name="tarih" id="tarih" value="1993-10-05">
+        </div>
+        <div>
+            <label for="">Email Giriniz: </label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="dosya">Dosya Seç:</label>
+            <input type="file" name="dosya " id="dosya">
+        </div>
+        <div>
+            <label for="tel">Telefon numarası:</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}-"
+                placeholder="xxx-xxx-xx-xx">
+        </div>
+        <hr>
+        <div>
+            <label for="sütlü">Hangi tatlıyı Seversiniz</label> <br>
+            <select name="sütlü_tatlı" id="sütlü" size="7">
+                <option value="Sütlaç">Sütlaç</option>
+                <option value="Keşkül">Keşkül</option>
+                <option value="Süpangle">Süpangle</option>
+                <option value="Aşure">Aşure</option>
+                <option value="Magnolia">Magnolia</option>
+                <option value="Güllaç">Güllaç</option>
+
+            </select>
+        </div>
+        <hr>
+        <div>
+            <label for="">Hangi Tatlıyı Seversiniz :</label> <br>
+            <select name="tatlı" id="tatlı" size="7">
+                <optgroup label="sütlü tatlılar">
+                    <option value="Sütlaç">Sütlaç</option>
+                    <option value="Güllaç">Güllaç</option>
+                    <option value="Süpangle">Süpangle</option>
+                    <option value="Soğuk Baklava">Soğuk Baklava</option>
+
+
+                </optgroup>
+
+                <optgroup label="Şerbetli Tatlılar">
+                    <option value="Baklava">Baklava</option>
+                    <option value="Künefe">Künefe</option>
+                    <option value="Tulumba">Tulumba</option>
+
+
+
+
+                </optgroup>
+
+            </select>
+
+        </div>
+
+    <div>
+        <label for="">Yorum</label><br>
+        <textarea name="yorum" id="yorum" placeholder="Yorumunuz..." style="resize: none; width: 75%;"></textarea>
+
+    </div>
+
+    <div>
+        <label for="browser-input">Browser</label>
+        <input type="text" name="kullanılan Browser" id="browser-input" list="browser_list">
+            <datalist id="browser_list">
+                <option value="Mozilla">Mozilla</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Chrome">Chrome</option>
+
+
+            </datalist>
+            
+
+
+
+
+    </div>
+
+
+
+        <br><br><br>
+
+        <input type="submit" value="send">
+        <input type="reset" value="Clear">
+
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
